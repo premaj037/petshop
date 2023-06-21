@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Reistration Form</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	background-color:#f7f7f7;
+}
+* {box-sizing: border-box}
+
+/* Add padding to container elements */
+.container {
+    padding: 15px;
+      width:700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:rgb(235, 206, 138);
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  color: maroon;
+  }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+  
+}
+select {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f4b70e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+button:hover {
+  opacity:1;
+}
+h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <img src="https://files.123freevectors.com/wp-content/original/111534-light-color-blurred-background-vector.jpg"width="100%"height="100%">
+  <form #userform="ngForm">
+    
+        <div class="container">
+          
+          <h1>PETS REGISTRATION FORM</h1>
+          
+      
+              <label for="email"><b>Pet's Name</b></label>
+            <input type="text" name="username"#name="ngModel" placeholder="Enter Petsname" required ngModel>
+            <span *ngIf="(name.touched||userform.submitted) &&  name.invalid" style="color:red;">name is required<br></span><br><br>
+          <label for=""><b>Pet's Breed</b></label>
+          <input type="text" placeholder="Enter Breed" #breed="ngModel"name="email" required ngModel>
+          <span *ngIf="(breed.touched||userform.submitted) &&  breed.invalid" style="color:red;">Breed is required<br></span><br><br>
+          <label for=""><b>Pet Weight</b></label>
+          <input type="text" placeholder="Enter weight" #weight="ngModel"name="weight1" required ngModel>
+          <span *ngIf="(weight.touched||userform.submitted) &&  weight.invalid" style="color:red;">weight is required<br></span><br><br>
+          <label for="psw"><b>Phone Number</b></label>
+          <input type="text"  placeholder="Enter Phone number"#phone="ngModel"name="phone" pattern="\d{10}$" required ngModel>
+    <div *ngIf="phone.errors &&(phone.invalid && (phone.touched||userform.submitted))">
+    <span *ngIf="phone.errors['required']"style="color:red">Phone number is required</span>
+    <span *ngIf="phone.errors['pattern']"style="color:red">Phone number must be 10 digit</span>
+      </div>
+            <br>
+            <label for="email"><b>Gender</b></label>
+            <input type="radio" name="gender"#gender="ngModel" required ngModel>
+            <label for =""><b>Male</b></label>
+            <input type="radio" name="gender"#gender="ngModel" required ngModel>
+            <label for =""><b>Female</b></label>
+            <span *ngIf="(gender.touched||userform.submitted) &&  gender.invalid" style="color:red;">Gender is required<br></span><br><br>
+            <label for="psw" ><b>Select the pet You Are Registering  </b></label>
+           <select #pet="ngModel" name="phoneCode" placeholder="Select the pet" required ngModel>
+            <option selected hidden value=""></option>
+            <option value="66">cat</option>
+            <option value="66">Dog</option>
+            <option value="66">Birds</option>
+            <option value="66">other</option>
+           </select>
+           <span *ngIf="(pet.touched||userform.submitted) && pet.invalid" style="color:red">pets must be select</span><br><br>
+       
+          
+          <input type="checkbox" #check="ngModel"name="check1" required ngModel>
+          <label for=""><b>I agree the terms & conditions</b></label>
+          <span *ngIf="(check.touched||userform.submitted) &&  check.invalid" style="color:red;">checkbox is required<br></span><br><br>
+          <div class="clearfix">
+      
+            <button type="submit" class="btn">SUBMIT</button>
+          </div>
+        
+        </div>
+        
+      </form>
+
+  
+
+</body>
+</html>
+

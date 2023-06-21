@@ -1,0 +1,299 @@
+<p>reviews works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 20px;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+p{
+    font-size: xx-large;
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+.star-icon {
+    color: #ccc;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.star-icon.filled {
+    color: #F7A115;
+}
+
+.reviews-text {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <body><section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <h2>OUR CUSTOMER REVIEWS</h2>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+            <!--BOX-1-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGdPWRn9Dqye1POSo_F1mgFFUqiClQG2n4Q&usqp=CAU" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Ajay Soam
+                                </strong>
+                            <span>
+                                December 20, 2019</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon">★</span>
+<span class="reviews-text">
+  468 reviews
+</span>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>An Awesome experience for my cat's prolonged health issue! Thank you Dr. Abhishek for giving deep insight on the problem and quick suggestions for the cure.</p>
+                </div>
+            </div>
+            <!--BOX-2-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxuqiT4tNCO_iTTH__w4sjS36fx0z5SnJUPw&usqp=CAU" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Vikas Pal
+                                </strong>
+                            <span>February 29, 2020</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon ">★</span>
+<span class="star-icon">★</span>
+<span class="reviews-text">
+  468 reviews
+</span>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>So convenient and they always do extra things to take care of my oliver. Love that all the vets are so friendly 🐶🐶🐶</p>
+                </div>
+            </div>
+            <!--BOX-3-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mm_H6inSs8b0Kt716XF2c61fsSE_xCwHFrsGlfykqnE6ObCJNDQugHDli-nddClq4CU&usqp=CAU" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Ritika
+                               </strong>
+                            <span> September 22, 2019</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon ">★</span>
+<span class="star-icon ">★</span>
+<span class="star-icon">★</span>
+<span class="reviews-text">
+  468 reviews
+</span>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>Honestly, @thepetnest is the best thing that’s happened to my pet. So perfect for us crazy cat lovers Thank you sir</p>
+                </div>
+            </div>
+            <!--BOX-4-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvg9Dz3jm2yWiIMQv_ZhAbiDAy6TI7xtTkA&usqp=CAU" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Barry Allen</strong>
+                            <span>April 22, 2021</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="star-icon filled">★</span>
+<span class="reviews-text">
+  468 reviews
+</span>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+        </div>
+      </section></body>
+</body>
+</html>
+

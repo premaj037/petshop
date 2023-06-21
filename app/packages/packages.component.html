@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin: 10px 0;
+  color: #363636;
+  font-size: 40px;
+}
+.inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  flex-basis: 33.33333%;
+  padding: 15px;
+}
+.inner-card  {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1)
+}
+.img-wrapper {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content {
+  margin-bottom: 20px;
+}
+.content h1 {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 10px;
+ 
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  
+}
+.btn-wrapper {
+  display: block;
+  text-align: center;
+}
+.view-btn {
+  width: 70%;
+  height: 40px;
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.view-btn:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.light-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms ease-out;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all 200ms ease-in-out;
+  padding: 20px;
+  box-shadow: 0 3px 9px rgba(0,0,0,.1);
+  position: relative;
+}
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  padding: 15px;
+}
+.box .light-img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box .close-btn {
+  position: absolute;
+  z-index: 100;
+  font-size: 30px;
+  color: #ccc;
+  left: 100%;
+  top: 0;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+/* Effect */
+.effect .light-box {
+  opacity: 1;
+  visibility: visible;
+}
+.effect .light-box .box {
+  transform: scale(1);
+}
+
+@media (max-width: 780px) {
+  .card {
+    flex-basis: 50%;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: maroon;
+}
+p{
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-basis: 5100%;
+  }
+  .box .close-btn {
+    margin-left: 0;
+    left: 80%;
+    top: -12%;
+  }
+}
+.credit {
+  font-size: 14px;
+}
+    </style>
+</head>
+<body><br><br>
+  
+    <div class="wrapper">
+        <div class="container">
+          <h1 class="title">ONLINE CONSULTATION</h1>
+          <div class="inner-wrapper">
+            <div class="card">
+              <div class="inner-card">
+                <div class="img-wrapper">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmXzsGr5-XesGD5Ug1lQ3nKcqwIXxS8Or3A&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                  <h1>Online Consultation</h1>
+                  <p>1 time consultation</p>
+                    <p>Call & Video Consultancy</p>
+                  <p> Personalized Advice
+                    </p>
+                </div>
+                <div class="btn-wrapper">
+                  <button class="view-btn" data-src="https://source.unsplash.com/collection/190727/900x600">View</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner-card">
+                <div class="img-wrapper">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXP0C8dPutgLHKbc0rlHllJvbDR8xcXn2V9w&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                  <h1>Pet Nutrition Consultation</h1>
+                  <p>Call/Video Consultation</p>
+                  <p>Current Diet, Health Issues/Concerns</p>
+                  <p>Healthy Dog Feeding Guide</p>
+
+                </div>
+                <div class="btn-wrapper">
+                  <button class="view-btn" data-src="https://source.unsplash.com/collection/190727/901x601">View</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="inner-card">
+                <div class="img-wrapper">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXbxR137BZQlA9FmxPtVoFGtIWKYJYqZDIg&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                  <h1>Online Behavioral Consultation</h1>
+                  <p>Barking</p>
+                  <p>New Pet Parenting</p>
+                  <p>Destructive behavior</p>
+
+                </div>
+                <div class="btn-wrapper">
+                  <button class="view-btn" data-src="https://source.unsplash.com/collection/190727/903x603">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="light-box">
+        <div class="box-wrapper">
+          <div class="box">
+            <span class="close-btn">&times</span>
+            <img src="" alt="" class="light-img">
+          </div>
+        </div>
+      </div>
+    <br><br>
+    <app-reviews></app-reviews>
+    <h1>OUR JOURNEY SO FAR</h1><br><br>
+<div *ngIf="displayName; then block1; else block2"></div>
+<ng-template #block1>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/star.png?v=1641249835" alt="Lights" style="width:30%;height:40%;float: left;">
+        <div class="caption">
+        <p>4.9</p>
+        <p>Average rating from 1800+ reviews</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img style="float: center"src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/bear.png?v=1641250018" alt="Nature" style="width:30%;height:40%;float: left;">
+        <div class="caption">
+        <p>82%</p>
+        <p>Pets feel better within one week</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="thumbnail">
+        <img src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/consultation.png?v=1641250118" alt="Fjords" style="width:25%;height:40%;float: left;">
+        <div class="caption">
+        <p>10000+</p>
+        <p>Consultations & Average yearly savings </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</ng-template>
+<ng-template #block2>
+<h3> Thank you </h3>
+</ng-template>
+
+</body>
+</html>

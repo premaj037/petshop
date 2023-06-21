@@ -1,0 +1,288 @@
+<html>
+<head>
+    <style>
+    @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+h2 {font-family: "Emilys Candy", cursive; text-align:center; color:white;}
+*{
+  box-sizing:border-box;
+}
+body
+{
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.header{
+  width:100%;
+  text-align:center;
+  background-color:rgb(110, 30, 110);
+}
+.header> span{
+  font-size:60px;
+  font-family:Emilys Candy;
+  text-transform:uppercase;
+  color:white;
+}
+.navbar{  
+  display:inline-block;
+  width:100%;
+  background-color:black;
+  padding:15px;
+  
+}
+.navbar-options>li{
+  display:inline-block;
+  width:16%;
+  text-align:center;
+}
+.navbar-options>li>a{
+  text-decoration:none;
+  font-family:sans-serif;
+  text-transform:uppercase;
+  color:white;
+  padding:15px;
+}
+.navbar-options>li>a:hover,.active{
+  background-color:rgb(173, 120, 173);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  text-align: center;
+  font-family: arial;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h2{
+  color: blue;
+  font-size: 15px;
+}
+h2:hover
+{
+  color:orange;
+}
+h4{
+  color:red;
+}
+
+.main {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.r1 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.r1,
+.r1 > .c1 {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.c1 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.r1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .c1 {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .c1 {
+    width: 100%;
+  }
+}
+
+</style>
+</head><body>
+<h1 style="color:brown;padding-left: 600px;">Different cat breeds are available</h1><br><br><hr>
+<div class="row">
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/661979aa82d3ca0f31d6f333d6c09349/bb36c/maine-coon-card-large.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/66513b2643c2df2117b235d12f059e72/bb36c/birman-card-large.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/cea353ac0faee38140a00105c8778c81/bb36c/himalayan-card-large.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/36e79f0e5efacd5855f7dbff4a39d608/bb36c/persian-card-large.webp' width='100%'>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class='column'>
+      <h2 style="color:black">Maine Coon</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Briman</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Himalayan</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Persian</h2>
+  </div>
+</div><br><br>
+<div class="row">
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/127cdc61e90311e58c5fe16faac55be0/bb36c/ragdoll-card-large.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/8b0307d055d246a25b9f0e7506242032/bb36c/siberian-card-large_0.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/c2744c5723ff76d29272d768c0b830ca/bb36c/turkish-van-card-large.webp' width='100%'>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://www.petfinder.com/static/f156a8272ccf168bfb16d9e34fe77921/bb36c/snowshoe-card-large.webp' width='100%'>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class='column'>
+      <h2 style="color:black">Ragdoll</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Siberian</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Turkish Van</h2>
+  </div>
+  <div class='column'>
+      <h2 style="color:black">Snowshoe</h2>
+  </div>
+</div> <br><hr><br><br>
+<h1 style="color:brown;padding-left: 750px;">Cat Foods</h1><br><hr><br>
+<div class="row">
+  <div class='column'>
+    <div class='card'>
+      <img src='https://images-eu.ssl-images-amazon.com/images/I/71N9qXb6rCL._AC_UL600_SR600,400_.jpg' width='100%'><br><br>
+      <h2>Purepet Ocean Fish Adult Dry Cat Food, 1.2kg</h2>
+      <h4>Rs.227.00</h4>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://images-eu.ssl-images-amazon.com/images/I/61tJAIhYFYL._AC_UL600_SR600,400_.jpg' width='100%'><br><br>
+      <h2>Adult Dry Cat Food-Ocean Fish Flavour, 3kg</h2>
+      <h4>Rs.975.00</h4>      
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://images-eu.ssl-images-amazon.com/images/I/71Nhcr5zIfL._AC_UL600_SR600,400_.jpg' width='100%'><br><br>
+      <h2>Drools Adult Dry Cat Food, 3kg</h2>
+      <h4>Rs.791.00</h4>
+    </div>
+  </div>
+  <div class='column'>
+    <div class='card'>
+      <img src='https://images-eu.ssl-images-amazon.com/images/I/71PgHeI5xGL._AC_UL600_SR600,400_.jpg' width='100%'><br><br>
+      <h2>Dry Cat Food-Ocean Fish, 1.2kg</h2>
+      <h4>Rs.432.00</h4>
+    </div>
+  </div>
+</div><br><hr><br><br>
+<h1 style="color:brown;padding-left: 750px;">Cat Accessories</h1><br><hr><br>
+<div class="main">
+
+
+  <div class="r1">
+    <div class="c1">
+      <div class="content">
+        <img src="https://m.media-amazon.com/images/I/51j6xT1aV8L._AC_UL400_.jpg" style="width:100%">
+        <p>First Play Interactive Cute & Funny Teaser Tumbler Cat Toys for Kittens, Cat Accessories for Persian Cats Rolly Polly Feather Ball Training Toy –Color May Vary</p>
+      </div>
+    </div>
+    <div class="c1">
+      <div class="content">
+      <img src="https://m.media-amazon.com/images/I/61e9dvuB9+S._AC_UL400_.jpg" style="width:100%">
+        <p>Qpets® Cat Toys Kitten Toys Cat Toy for Indoor Cats Cat Feathers Wand Cat Interactive Toys Set with Mouse Mice Balls and Bells Toys for Cats Kitten Toys for Kttens to Play</p>
+      </div>
+    </div>
+    <div class="c1">
+      <div class="content">
+      <img src="https://m.media-amazon.com/images/I/51V4mHPn-AL._AC_UL400_.jpg"  style="width:100%">
+         <p>Goofy Tails Food Buddies Donut Plush Cat Toys | Rattle Toys for Cats and Kitten Accessories| Cat Toys for Kittens and Cats| Toys for Cats and Kittens Above 3 Months</p>
+      </div>
+    </div>
+    <div class="c1">
+      <div class="content">
+      <img src="https://m.media-amazon.com/images/I/514q6U7c70L._AC_UL400_.jpg"  style="width:100%">
+        <p>The Top Knott Macrame Cat Hammock Macrame Hanging Swing Cat Basket Home Pet Cat Accessories Dog Cat's House Puppy Bed Cat Swing Cat Tree Furniture</p>
+      </div>
+    </div>
+    </div>
+  <!-- END GRID -->
+  <div class="r1">
+      <div class="c1">
+        <div class="content">
+          <img src="https://m.media-amazon.com/images/I/61Y3f4t4BxL._AC_UL400_.jpg" style="width:100%">
+          <p>Qpets® Cat Vest Harness with 1.2m Dog Leash Adjustable Size Dog Vest Harness Breathable Mesh Fabric with Safety Reflective Strip Dog Harness for Cat(S, red)</p>
+        </div>
+      </div>
+      <div class="c1">
+        <div class="content">
+        <img src="https://m.media-amazon.com/images/I/71sUV3kPdOS._AC_UL400_.jpg" style="width:100%">
+          <p>Qpets® Cat Toys - Interactive 11 Piece Cat Toy Set with Retractable Teaser Wands and Feather Worm Toys - Kitten Toys Variety of Vibrant Colours - Activity Toys to Exercise Cats and Kittens</p>
+        </div>
+      </div>
+      <div class="c1">
+        <div class="content">
+        <img src="https://m.media-amazon.com/images/I/61a9aNTsPxL._AC_UL400_.jpg"  style="width:100%">
+           <p>The DDS Store Adjustable Reflective Nylon Cat Safety Collar with for Cat Dog Bell Kitten ( Pack of 2 ) Color May Vary</p>
+        </div>
+      </div>
+      <div class="c1">
+        <div class="content">
+        <img src="https://m.media-amazon.com/images/I/61LJPQLrbQL._AC_UL400_.jpg"  style="width:100%">
+          <p>The Pets Company Interactive Tower of Tracks Cat Toy with Balls, Pet Amusement Interactive Board Game Toys for Cats and Kitten</p>
+        </div>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
